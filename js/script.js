@@ -134,7 +134,7 @@ function start() {
     }
 
     function disparo() {
-     
+
         if (podeAtirar == true) {
             somDisparo.play();
             podeAtirar = false;
@@ -255,7 +255,7 @@ function start() {
 
     //Explosão 1
     function explosao1(inimigo1X, inimigo1Y) {
-            
+
         somExplosao.play();
         $("#fundoGame").append("<div id='explosao1'></div");
         $("#explosao1").css("background-image", "url(imgs/explosao.png)");
@@ -298,7 +298,7 @@ function start() {
     //Explosão2
 
     function explosao2(inimigo2X, inimigo2Y) {
-        
+
         somExplosao.play();
         $("#fundoGame").append("<div id='explosao2'></div");
         $("#explosao2").css("background-image", "url(imgs/explosao.png)");
@@ -388,10 +388,29 @@ function start() {
 
             $("#energia").css("background-image", "url(imgs/energia0.png)");
 
-            //Game Over
+            gameOver();
         }
 
     } // Fim da função energia()
+
+    //Função GAME OVER
+    function gameOver() {
+        fimdejogo = true;
+        musica.pause();
+        somGameover.play();
+
+        window.clearInterval(jogo.timer);
+        jogo.timer = null;
+
+        $("#jogador").remove();
+        $("#inimigo1").remove();
+        $("#inimigo2").remove();
+        $("#amigo").remove();
+
+        $("#fundoGame").append("<div id='fim'></div>");
+
+        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
+    } // Fim da função gameOver();
 
 
 
