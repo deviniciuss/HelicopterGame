@@ -17,7 +17,7 @@ function start() {
     var perdidos = 0;
     var energiaAtual = 3;
     var jogo = {}
-    var velocidade = 3;
+    var velocidade = 5;
     var posicaoY = parseInt(Math.random() * 334);
 
     var TECLA = {
@@ -147,7 +147,7 @@ function start() {
             $("#disparo").css("top", topoTiro);
             $("#disparo").css("left", tiroX);
 
-            var tempoDisparo = window.setInterval(executaDisparo, 10);
+            var tempoDisparo = window.setInterval(executaDisparo, 30);
 
         } //Fecha podeAtirar
 
@@ -361,7 +361,7 @@ function start() {
 
     function placar() {
 
-        $("#placar").html("<h2> Pontos: " + pontos + " |  Salvos: " + salvos + " | Perdidos: " + perdidos + "</h2>");
+        $("#placar").html("<h2> Points: " + pontos + " |  Safe: " + salvos + " | Lost: " + perdidos + "</h2>");
 
 
     } //fim da função placar()
@@ -409,7 +409,7 @@ function start() {
 
         $("#fundoGame").append("<div id='fim'></div>");
 
-        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
+        $("#fim").html("<h1> Game Over </h1><p>Scored: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>▶️Play Again</h3></div>");
     } // Fim da função gameOver();
 
 

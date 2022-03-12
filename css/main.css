@@ -5,9 +5,10 @@
 }
 h1{
     font-family:Titulo;
-    font-size:40px;
+    font-size:35px;
     color:#603A03;
 }
+
 body{
     background-image: url(../imgs/fundo2.jpg);
 	
@@ -35,13 +36,17 @@ footer i{
 }
 
 
+
 #fundoGame {
 	width:950px;
 	height:630px;
 	background-image:url(../imgs/fundo_game.jpg);
-	border-color:#FFF;
-	border-style:solid;
+	border: 3px;
+	border-radius: 15px;
+	border-color:#603A03;
+	border-style:solid ;
 }
+ 
 
 #jogador {
 	width:256px;
@@ -263,6 +268,11 @@ h3 {
 	color:#603A03;
 
 }
+#container p{
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size:20px;
+	color:#603A03;
+}
 
 #fim {
 	width:350px;
@@ -276,5 +286,6 @@ h3 {
 
 }
 
+a
 
 
