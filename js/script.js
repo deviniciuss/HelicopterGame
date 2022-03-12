@@ -8,6 +8,8 @@ function start(){
 
     //Main variables of the game
     var jogo = {}
+    var velocidade = 5;
+    var posicaoY = parseInt(Math.random() * 334);
     var TECLA = {
         W: 87,
         S: 83,
@@ -30,6 +32,7 @@ function start(){
     function loop(){
         moveFundo();
         moveJogador();
+        moveInimigo1();
     }
 
     function moveFundo(){
@@ -61,6 +64,20 @@ function start(){
             
         }
     
+    }
+
+    function moveInimigo1(){
+    posicaoX = parseInt($("#inimigo1").css("left"));
+	$("#inimigo1").css("left",posicaoX-velocidade);
+	$("#inimigo1").css("top",posicaoY);
+		
+		if (posicaoX<=0) {
+		posicaoY = parseInt(Math.random() * 334);
+		$("#inimigo1").css("left",694);
+		$("#inimigo1").css("top",posicaoY);
+			
+		}
+
     }
 
 }
