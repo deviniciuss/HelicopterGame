@@ -9,7 +9,20 @@ h1{
     color:#603A03;
 }
 body{
-    background-image: url(../imgs/fundo.jpg);
+    background-image: url(../imgs/fundo2.jpg);
+	
+	
+}
+footer{
+	font-family:  Times, serif;
+	font-weight: 300px;
+	text-align: center;
+	color: white;
+	padding: 1px;
+	size: 22px;
+}
+footer i{
+	color: white;
 }
 #container{
 	width:950px;
@@ -17,6 +30,8 @@ body{
 	position:relative;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 28px;
+	margin-bottom: auto;
 }
 
 
