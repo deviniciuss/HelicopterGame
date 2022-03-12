@@ -33,6 +33,9 @@ function start(){
         moveFundo();
         moveJogador();
         moveInimigo1();
+        moveInimigo2();
+        moveAmigo();
+
     }
 
     function moveFundo(){
@@ -80,4 +83,28 @@ function start(){
 
     }
 
+    function moveInimigo2() {
+    posicaoX = parseInt($("#inimigo2").css("left"));
+	$("#inimigo2").css("left",posicaoX-3);
+				
+		if (posicaoX<=0) {
+			
+		$("#inimigo2").css("left",775);
+					
+	    }
+    }
+
+    function moveAmigo() {
+	
+        posicaoX = parseInt($("#amigo").css("left"));
+        $("#amigo").css("left",posicaoX+1);
+                    
+            if (posicaoX>906) {
+                
+            $("#amigo").css("left",0);
+                        
+        }
+    
+    } 
 }
+
