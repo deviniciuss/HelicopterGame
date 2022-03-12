@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resgate</title>
     <link rel="stylesheet" href="css/main.css">
-    
+
 </head>
+
 <body>
+    
     <div id="container">
         <div id="fundoGame">
             <div id="inicio" onclick="start()">
@@ -17,18 +20,37 @@
                 <p>▶️Start</p>
             </div>
         </div>
-       
+
     </div>
+
+    <!-- Sons do jogo !-->
+    <audio src="sons/som.mp3" preload="auto" id="somDisparo"></audio>
+    <audio src="sons/explosao.mp3" preload="auto" id="somExplosao"></audio>
+    <audio src="sons/musica_fundo.mp3" preload="auto" id="musica"></audio>
+    <audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>
+    <audio src="sons/perdido.mp3" preload="auto" id="somPerdido"></audio>
+    <audio src="sons/resgate.mp3" preload="auto" id="somResgate"></audio>
+
+
+
     <footer>
-        <p>Created by: Vinicius Rosa | 
-            <a href="https://www.linkedin.com/in/vinicius-rosa-/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> |
-             <a href="https://github.com/deviniciuss" target="_blank"><i class="fa-brands fa-github"></i></a></p>
-        
+        <p>Created by: Vinicius Rosa |
+            <a href="https://www.linkedin.com/in/vinicius-rosa-/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a> |
+            <a href="https://github.com/deviniciuss" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </p>
+
     </footer>
-    
+
+
+
+
+
+
     <script src="https://kit.fontawesome.com/1bc4f44641.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery-collision.min.js"></script>
 </body>
+
 </html>
