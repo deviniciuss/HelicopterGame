@@ -17,7 +17,7 @@ function start() {
     var perdidos = 0;
     var energiaAtual = 3;
     var jogo = {}
-    var velocidade = 5;
+    var velocidade = 3;
     var posicaoY = parseInt(Math.random() * 334);
 
     var TECLA = {
@@ -37,7 +37,7 @@ function start() {
 
 
     //Game Loop
-    jogo.timer = setInterval(loop, 30);
+    jogo.timer = setInterval(loop, 25);
 
     function loop() {
         moveFundo();
@@ -135,7 +135,7 @@ function start() {
             $("#disparo").css("top", topoTiro);
             $("#disparo").css("left", tiroX);
 
-            var tempoDisparo = window.setInterval(executaDisparo, 30);
+            var tempoDisparo = window.setInterval(executaDisparo, 10);
 
         } //Fecha podeAtirar
 
@@ -191,6 +191,7 @@ function start() {
         if (colisao3.length > 0) {
 
             pontos = pontos + 100;
+            velocidade=velocidade+0.3;
             inimigo1X = parseInt($("#inimigo1").css("left"));
             inimigo1Y = parseInt($("#inimigo1").css("top"));
 
