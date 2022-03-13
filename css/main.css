@@ -1,3 +1,7 @@
+ @media only screen and (max-device-width: 900px) {
+  .menu { width:600px; } 
+}
+
 @font-face {
     font-family:Titulo ;
     src: url(../fontes/ANODETONOONE.TTF);
@@ -285,7 +289,4 @@ h3 {
 	padding:10px;
 
 }
-
-a
-
 

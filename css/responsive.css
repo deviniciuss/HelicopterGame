@@ -1,0 +1,27 @@
+@media screen and (max-width:700px){
+    body .container{
+    display: flex;
+    width: 50%;
+    height: auto;
+ 
+    }
+    .fundoGame{
+        width: 50%;
+        height: 50%;
+    }
+
+    
+    
+
+}
+
+ @media screen and (min-width:1000px){
+    
+        
+        .fundoGame{
+            width: 50%;
+            height: 50%;
+        }
+    
+}
+
