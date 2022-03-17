@@ -8,7 +8,7 @@ Game of Helicopter, where the goal is to survive and help your soldiers.
 
 ## Installation
 
-Use this link for visualization of the project https://helicoptergame.deviniciuss.repl.co/
+Use this link for visualization of the project https://deviniciuss.github.io/HelicopterGame/
 
 
 ## Contributing
